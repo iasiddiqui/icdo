@@ -10,6 +10,7 @@ import './home.css'
 import { Slider } from '@mui/material';
 
 const Home = () => {
+  console.log('hi')
   return (
     <div className="home">
       {/* Header Section */}

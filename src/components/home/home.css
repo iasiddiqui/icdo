@@ -84,58 +84,94 @@ span {
 
 .navbar {
     background-color: #0087B6;
-    padding: 1px 0;
+    padding: 1px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin-left: 130px;
-    margin-right: 130px;
+    justify-content: center;
+    /* padding: 0 20px;  */
+    align-items: center;
+    /* gap: 15px; */
 }
 
 .navbar ul li {
-    /* display: inline; */
     position: relative;
+    /* min-width: 100px; */
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
+    white-space: nowrap;
 }
+.navbar ul li a:hover{
+    width: auto;
+    color: #061C28;
+
+}
+
 
 /* Dropdown Styling */
 
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    background-color: #0074A9;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #061C28;
+    /* min-width: 150px; */
+    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
     z-index: 1;
+    /* left: -140%; */
+    bottom: 0;
+    height: 0;
+    left: 0;
+    top: 20px;
+    /* height: auto; */
+    /* padding: auto; */
+    overflow: hidden;
 }
 
 .dropdown-content li {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+
 }
 
 .dropdown-content li a {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     color: white;
     text-decoration: none;
     display: block;
+    bottom: 1px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #0087B6;
 }
 
 .dropdown-content li a:hover {
-    background-color: #005F8A;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    margin-left: -40px;
 }
 
 .navbar ul li:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block; 
+    height: fit-content;
 }
+
 
 .alerts {
     background-color: #dad9d7;

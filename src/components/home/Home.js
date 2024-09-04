@@ -58,7 +58,7 @@ const Home = () => {
             <li className="dropdown">
               <a href="#">Speakers</a>
               <ul className="dropdown-content">
-                <li><a href="#">Keynote Speakers</a></li>
+                <li><a href="#">KeynoteSpeakers</a></li>
                 <li><a href="#">Invited Speakers</a></li>
                 <li><a href="#">Speaker Guidelines</a></li>
               </ul>
